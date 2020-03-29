@@ -43,8 +43,7 @@ triggers.register_on_dig({
 --register a counter for the number of crafted planks
 triggers.register_counter("pirate_story:craftedPlanksCount","craft","default:wood",false)
 
----send message using the counter
---it should usually be used in the is_active function tho
+--send message using the counter
 triggers.register_on_craft({
 	target = "default:wood",
 	id = "pirate_story:craftedPlanks",
